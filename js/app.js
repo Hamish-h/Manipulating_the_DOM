@@ -29,3 +29,14 @@ const createReadingListItem = function (form) {
 
   return readingListItem;
 }
+
+const buildElement = function (tag, value) {
+  const element = document.createElement(tag);
+  element.textContent = value;
+  return element;
+}
+
+const handleDeleteAllClick = function (event) {
+  const readingList = document.querySelector('#reading-list');
+  readingList.innerHTML = '';
+}
