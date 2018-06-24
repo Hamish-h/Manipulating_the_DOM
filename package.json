@@ -1,7 +1,6 @@
 {
   "name": "repo",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "mocha specs"
@@ -11,5 +10,17 @@
   "license": "ISC",
   "devDependencies": {
     "mocha": "^5.2.0"
-  }
+  },
+  "dependencies": {
+    "npm": "^6.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hamish-h/Manipulating_the_DOM.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Hamish-h/Manipulating_the_DOM/issues"
+  },
+  "homepage": "https://github.com/Hamish-h/Manipulating_the_DOM#readme",
+  "description": ""
 }
