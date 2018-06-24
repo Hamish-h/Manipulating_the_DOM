@@ -18,7 +18,7 @@ label.primary {
 }
 
 label::after {
-  content: ":"
+  content: ":";
 }
 
 button, input[type="submit"] {
