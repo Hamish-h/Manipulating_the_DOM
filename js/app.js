@@ -7,3 +7,12 @@ document.addEventListener('DOMContentLoaded', () => {
     deleteAllButton.addEventListener('click', handleDeleteAllClick);
 
 })
+
+const handleNewItemFormSubmit = function (event) {
+  event.preventDefault();
+  const readingListItem = createReadingListItem(event.target);
+  const readingList = document.querySelector('#reading-list');
+  readingList.appendChild(readingListItem);
+  event.target.reset();
+
+}
