@@ -9,10 +9,12 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 const handleNewItemFormSubmit = function (event) {
+
   event.preventDefault();
   const readingListItem = createReadingListItem(event.target);
   const readingList = document.querySelector('#reading-list');
   readingList.appendChild(readingListItem);
+
   event.target.reset();
 
 }
