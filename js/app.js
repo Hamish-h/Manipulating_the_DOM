@@ -16,3 +16,16 @@ const handleNewItemFormSubmit = function (event) {
   event.target.reset();
 
 }
+
+const createReadingListItem = function (form) {
+  const readingListItem = document.createElement('li');
+  readingListItem.classList.add('reading-list-item');
+  const title = buildElement('h2', form.title.value);
+  readingListItem.appendChild(title);
+  const author = buildElement('h3', form.author.value);
+  readingListItem.appendChild(author);
+  const category = buildElement('p', form.category.value);
+  readingListItem.appendChild(category);
+
+  return readingListItem;
+}
